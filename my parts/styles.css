@@ -1,0 +1,66 @@
+/* Extracted and enhanced styles for MY PARTS website */
+
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1494972308805-463d61949f44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+    background-size: cover;
+    background-position: center;
+    transition: background-position 0.5s ease;
+}
+.hero-bg:hover {
+    background-position: top center;
+}
+
+.brand-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.brand-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.part-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.part-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Navigation improvements */
+nav a:focus,
+nav button:focus {
+    outline: 2px solid #2563eb; /* Tailwind blue-600 */
+    outline-offset: 2px;
+}
+
+/* Buttons */
+button, .btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Search bar improvements */
+select:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* Tailwind blue-500 */
+}
+
+/* Footer links */
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Mobile menu enhancements */
+.mobile-menu {
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
